@@ -1,11 +1,12 @@
+
 import React from "react";
-import blogData from "../data/blog";
+// import blogData from "../data/blog";
 import Article from "./Article";
 
-console.log(blogData);
+// console.log(blogData);
 
 function ArticleList({ posts }) {
-    console.log(posts);
+    // console.log(posts);
     let postItem = posts.map((post) => (
       <Article 
       key = {post.id}
@@ -16,12 +17,15 @@ function ArticleList({ posts }) {
     
     
     return (
-      <div id="projects">
-        <h2>My Projects</h2>
-        <div id="project-list">
-         {postItem}
-        </div>
-      </div>
+      <main>
+        {postItem}
+      </main>
+      // <div id="posts">
+      //   <h2> Posts</h2>
+      //   <div id="post-list">
+      //    {postItem}
+      //   </div>
+      // </div>
     );
   }
 
